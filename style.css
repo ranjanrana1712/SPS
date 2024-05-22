@@ -1,0 +1,266 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dangrek&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 600px;
+}
+body {
+  background-color: #8cc461;
+}
+
+.header {
+  border: 2px solid #ffffff;
+  width: 800px;
+  height: 158px;
+  margin: 60px 250px;
+  border-radius: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-text {
+  font-weight: 600;
+  font-size: 30px;
+  color: #ffffff;
+  padding: 12px 20px;
+  line-height: 38px;
+}
+
+.text {
+}
+.scores {
+  color: black;
+  font-size: 14px;
+  display: flex;
+  gap: 40px;
+}
+
+.computer-score {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  height: 128px;
+  width: 139px;
+  border-radius: 9px;
+}
+.computer-score div {
+  padding: 6px 28px;
+  font-size: 15px;
+}
+.computer-score div span {
+  margin-left: 12px;
+}
+#computer-result {
+  font-size: 60px;
+  margin: 0 24px;
+}
+.your-score {
+  border: 1px solid #ffffff;
+  background-color: #ffffff;
+  margin-right: 20px;
+  height: 128px;
+  width: 139px;
+  border-radius: 9px;
+}
+#your-result {
+  font-size: 60px;
+  margin: 0 8px;
+}
+.your-score div {
+  padding: 6px 50px;
+  font-size: 15px;
+}
+/* ************************************* */
+.game-rule-container {
+  width: 303px;
+  height: 500px;
+  position: relative;
+  left: 1110px;
+  bottom: 70px;
+}
+.close {
+  border: 5px solid white;
+  border-radius: 40px;
+  height: 50px;
+  width: 50px;
+  background-color: #ff0000;
+  position: relative;
+  left: 260px;
+  top: 26px;
+}
+.x {
+  font-family: "Dangrek", sans-serif;
+  color: white;
+  font-size: 42px;
+  position: relative;
+  top: -20px;
+  left: 10px;
+}
+.game-rule-points {
+  border: 7px solid #ffffff;
+  border-radius: 13px;
+  height: 350px;
+  width: 278px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.rectangle {
+  border: 1px solid;
+  border-radius: 2px;
+  height: 8px;
+  width: 8px;
+  background-color: #ffd600;
+  position: relative;
+  top: 28px;
+  margin-left: 6px;
+}
+.rect-one {
+  margin-bottom: 10px;
+}
+.rule-heading {
+  margin-bottom: 15px;
+  margin-top: 20px;
+  width: 156px;
+  height: 27px;
+  margin-left: 40px;
+  font-size: 24px;
+}
+.ruleone {
+  margin-left: 18px;
+  margin-right: 2px;
+  width: 211px;
+  height: 27px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border-bottom-width: 2px;
+}
+
+.ruletwo {
+  margin-bottom: 16px;
+}
+.four {
+  margin-bottom: 20px;
+}
+/* ************************ */
+
+.circle_rule_container {
+  display: flex;
+}
+.circle_container {
+  /* background-color: red; */
+  display: flex;
+  height: 320px;
+  width: 500px;
+  justify-content: center;
+  position: relative;
+}
+.stone-circle {
+  border: 16px solid #0074b6;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 3px 0px 21px 1px #00000059 inset;
+}
+.paper-circle {
+  border: 16px solid #bd00ff;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 3px 0px 21px 1px #00000059 inset;
+}
+.scissor-circle {
+  border: 16px solid #ffa943;
+  height: 130px;
+  width: 130px;
+  border-radius: 50%;
+  background-color: white;
+  box-shadow: 3px 0px 21px 1px #00000059 inset;
+}
+.middle-circle {
+  align-self: flex-end;
+}
+.connected_lines {
+  position: relative;
+  top: 50px;
+}
+.line {
+  position: relative;
+  border: 1px solid #000000a3;
+  height: 20px;
+  border-radius: 5px;
+  background: #000000a3;
+}
+.stonepaper {
+  position: relative;
+  top: 10px;
+  right: 317px;
+  border: none;
+
+  width: 134px;
+}
+.stonescissor {
+  position: relative;
+  top: 88px;
+  right: 380px;
+  border: none;
+
+  width: 112px;
+  transform: rotate(58deg);
+}
+.paperstone {
+  position: relative;
+  top: 72px;
+  right: 230px;
+  border: none;
+
+  width: 112px;
+  transform: rotate(-58deg);
+}
+
+.icons :nth-child(1){
+  position: relative;
+  top: -90px;
+  right: 420px;
+}
+.icons :nth-child(2){
+  position: relative;
+  top: 109px;
+  right: 362px;
+}
+.icons :nth-child(3){
+  position: relative;
+  top: -86px;
+  right: 294px;
+}
+
+
+
+
+/* *********** */
+
+.buttons button{
+  border: 2px solid #FFFFFF;
+  background-color: #8cc461;
+  width: 119px;
+  height: 40px;
+  border-radius: 10px;
+}
+.rules-button{
+  position: relative;
+  top: 180px;
+  left: 450px;
+
+}
+.next-button{
+  position: relative;
+  top: 180px;
+  left: 180px;
+
+
+}

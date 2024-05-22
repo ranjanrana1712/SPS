@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>stone-paper-scissor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="header">
+    <div class="header-text">
+      <p class="text">
+        <span>ROCK</span> <br />
+        <span>PAPER</span> <br />
+        <span>SCISSORS</span>
+      </p>
+    </div>
+    <div class="scores">
+      <div class="computer-score">
+        <div>
+          COMPUTER <br />
+          <span>SCORE</span>
+        </div>
+        <div id="computer-result">0</div>
+      </div>
+      <div class="your-score">
+        <div>
+          YOUR <br />
+          <span>SCORE</span>
+        </div>
+        <div id="your-result">0</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="circle_rule_container">
+    <div class="game-rule-container">
+      <div class="close">
+        <div class="x">x</div>
+      </div>
+      <div class="game-rule-points">
+        <div>
+          <p class="rule-heading">GAME RULES</p>
+        </div>
+
+        <div>
+          <div class="rectangle rect-one"></div>
+          <p class="ruleone">
+            Rock beats scissors, scissors beat paper, and paper beats rock.
+          </p>
+        </div>
+
+        <div>
+          <div class="rectangle rect-one"></div>
+          <p class="ruleone ruletwo">
+            Agree ahead of time whether you’ll count off “rock, paper,
+            scissors, shoot” or just “rock, paper, scissors.”
+          </p>
+        </div>
+
+        <div>
+          <div class="rectangle ruletwo"></div>
+          <p class="ruleone">
+            Use rock, paper, scissors to settle minor decisions or simply play
+            to pass the time
+          </p>
+        </div>
+
+        <div class="four">
+          <div class="rectangle ruletwo"></div>
+          <p class="ruleone">
+            If both players lay down the same hand, each player lays down
+            another hand
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="circle_container">
+      <div class="stone-circle"></div>
+      <div class="paper-circle middle-circle"></div>
+      <div class="scissor-circle"></div>
+    </div>
+
+
+    <div class="connected_lines">
+      <div class="line stonepaper"></div>
+      <div class="line stonescissor"></div>
+      <div class="line paperstone"></div>
+      <div>
+
+      </div>
+
+      <div class="icons">
+        <img src="./Assets/stone.png" alt="stone loading"><img src="./Assets/paper.png" alt=""><img
+          src="./Assets/scissor.png" alt="">
+      </div>
+
+
+      <div class="buttons">
+        
+    
+        <button class="rules-button">Rules</button>
+        <button class="next-button"><a href="./result.html">Next</a></button>
+      </div>
+
+
+      <script src="script.js"></script>
+</body>
+
+</html>
